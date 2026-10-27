@@ -1,0 +1,14 @@
+{
+  "name": "dsh-nook",
+  "version": "0.1.0",
+  "description": "Nook：住在 DSH 里的 AI 伙伴。会记得你、会在相处中慢慢长出自己的性格、会自己去看东西，也会主动来找你。",
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
