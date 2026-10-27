@@ -14,6 +14,8 @@ async function born(opts) {
   const { e, c } = engine(opts)
   await e.updateSettings({ timeZone: 'Asia/Shanghai' })
   await e.setup({ name: '小满', relation: 'friend' })
+  // Keep her own seeded curiosities out of the way: these tests follow the user's topic.
+  e.state.persona.interests = []
   return { e, c }
 }
 

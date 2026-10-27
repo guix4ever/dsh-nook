@@ -1,0 +1,4 @@
+# Dev-only overlay: `dsh web --patch test/dev/harness.patch.yml`.
+- insert:
+    - id: nook-dev-harness
+      name: ./harness.js

@@ -1,0 +1,28 @@
+# dsh-nook bundle patch: the host plugin plus a "Nook" agent preset.
+# Sessions started with the Nook preset are Nook; every other session is untouched.
+- insert:
+    - id: nook
+      name: dsh-nook
+    - id: preset-nook
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: nook
+        name: Nook
+        description: 住在这里的 AI 伙伴：记得你、会长大、会主动来找你
+        order: 0
+        plugins:
+          - id: nook-agent
+            name: dsh-nook/agent
+          - id: tool-web
+            name: '@deepseek-ai/dsh-tool-web'
+            config:
+              fetch: true
+              searchTimeoutMs: 60000
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
