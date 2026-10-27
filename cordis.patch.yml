@@ -7,8 +7,8 @@
       name: '@deepseek-ai/dsh-agent-preset'
       config:
         id: nook
-        name: Nook
-        description: 住在这里的 AI 伙伴：记得你、会长大、会主动来找你
+        name: 拟人化
+        description: 拟人化插件：一个记得你、会长大、会主动来找你的 AI 伙伴
         order: 0
         plugins:
           - id: nook-agent

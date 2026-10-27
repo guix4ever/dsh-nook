@@ -1,7 +1,7 @@
 {
   "name": "dsh-nook",
   "version": "0.1.0",
-  "description": "Nook：住在 DSH 里的 AI 伙伴。会记得你、会在相处中慢慢长出自己的性格、会自己去看东西，也会主动来找你。",
+  "description": "拟人化插件：住在 DSH 里的 AI 伙伴（默认叫大D老师）。会记得你、会在相处中慢慢长出自己的性格、会自己去看东西，也会主动来找你。",
   "type": "module",
   "main": "lib/index.js",
   "scripts": {
