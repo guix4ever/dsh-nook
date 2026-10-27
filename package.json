@@ -20,6 +20,7 @@
   "files": [
     "lib",
     "assets",
+    "docs",
     "cordis.patch.yml",
     "README.md",
     "LICENSE"
@@ -48,5 +49,10 @@
       ],
       "platform": "web"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guix4ever/dsh-nook.git"
+  },
+  "homepage": "https://github.com/guix4ever/dsh-nook#readme"
 }

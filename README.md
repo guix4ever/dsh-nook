@@ -10,16 +10,16 @@
 
 ## 安装
 
-在 DSH 侧边栏 → 插件 → 添加插件，输入包名：
+在 DSH 侧边栏 → 插件 → 添加插件，输入仓库地址：
 
 ```text
-dsh-nook
+github:guix4ever/dsh-nook
 ```
 
 或命令行：
 
 ```sh
-dsh plugin --profile web add dsh-nook
+dsh plugin --profile web add github:guix4ever/dsh-nook
 ```
 
 装好后重启 DSH，侧边栏会多出 **大D老师**（显示的是你给她起的名字）。第一次打开填三件事（名字、朋友还是恋人、性格可以不选），就能开始聊。
@@ -44,6 +44,10 @@ dsh plugin --profile web add dsh-nook
 | `lib/agent.js` | 挂在「Nook」agent 预设里：人格作为完整的 system prompt，每轮注入她当前的状态，把对话交给引擎 |
 | `lib/client.js` | 浏览器端：侧边栏入口和 Nook 页面 |
 | `cordis.patch.yml` | 插入宿主插件和「Nook」预设 |
+
+## 设计
+
+界面的设计语言（字号、颜色、间距、插画的用法）写在 [docs/design.md](docs/design.md)。插画由奶龙大王绘制。
 
 ## 开发
 
